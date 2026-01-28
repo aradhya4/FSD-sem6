@@ -7,5 +7,17 @@ const myPromise = new Promise((resolve, reject) =>{
     }
 })
 // console.log(myPromise);     //if we run only this then  Promise {pass} is returned
-myPromise.then((msg) =>console.log(msg))
-    .catch((error) =>console.log("some error occured")) //when we run this then pass is returned and this is perfect
+// myPromise.then((msg) =>console.log(msg))
+//     .catch((error) =>console.log("some error occured")) //when we run this then pass is returned and this is perfect
+
+const f1 = async() => {
+    const msg = await myPromise;
+    console.log(msg);
+}
+
+const getData = async() => {
+    const response = await fetch("https://fakestoreapi.com/products")
+    const res = await response.json()
+    console.log(res);
+}
+getData();
