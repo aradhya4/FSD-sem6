@@ -1,0 +1,13 @@
+*hosting import function hota hai
+let is a non hosted variable
+download 2 packages in Day -02 file :
+ 1. npm init -y
+ 2. npm i fs
+by default : require-->common js
+import --> module
+fs provides:
+      async :non-blocking
+      sync : blocking
+           -writeFileSync
+           -readFileSync
+           -appendFileSync
